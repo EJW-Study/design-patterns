@@ -1,4 +1,4 @@
-package com.ejw.designpatterns.ejkim.adaptor.starcraft;
+package com.ejw.designpatterns.ejkim.adaptor.star1;
 
 public class Test {
     public static void main(String[] args) {
