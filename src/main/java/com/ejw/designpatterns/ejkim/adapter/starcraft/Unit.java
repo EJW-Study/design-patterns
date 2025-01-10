@@ -1,4 +1,4 @@
-package com.ejw.designpatterns.ejkim.adapter.star2;
+package com.ejw.designpatterns.ejkim.adapter.starcraft;
 
 public abstract class Unit {
     abstract String move();

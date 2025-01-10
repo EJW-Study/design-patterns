@@ -1,4 +1,4 @@
-package com.ejw.designpatterns.ejkim.adapter.star2;
+package com.ejw.designpatterns.ejkim.adapter.starcraft;
 
 public class Reaver extends GroundUnit {
     @Override

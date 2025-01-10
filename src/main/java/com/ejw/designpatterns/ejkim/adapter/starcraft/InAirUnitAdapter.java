@@ -1,4 +1,4 @@
-package com.ejw.designpatterns.ejkim.adapter.star2;
+package com.ejw.designpatterns.ejkim.adapter.starcraft;
 
 public class InAirUnitAdapter extends AirUnit {
     private final AirUnit airUnit;
