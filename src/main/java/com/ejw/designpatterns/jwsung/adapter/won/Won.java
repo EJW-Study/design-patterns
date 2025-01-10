@@ -1,7 +1,10 @@
 package com.ejw.designpatterns.jwsung.adapter.won;
 
+import lombok.Getter;
+
 import java.util.Objects;
 
+@Getter
 public class Won {
 
     protected int value;
