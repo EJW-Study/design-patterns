@@ -15,7 +15,7 @@ public class MetroActionImpl implements MetroAction {
 
     @Override
     public String doorOpen() {
-        return company + " DoorOpen";
+        return company + " DoorOpen ";
     }
 
     @Override

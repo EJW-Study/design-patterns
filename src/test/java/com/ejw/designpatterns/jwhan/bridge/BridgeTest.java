@@ -1,9 +1,5 @@
 package com.ejw.designpatterns.jwhan.bridge;
 
-import com.ejw.designpatterns.ejkim.bridge.apple.Macbook;
-import com.ejw.designpatterns.ejkim.bridge.apple.MacbookAir;
-import com.ejw.designpatterns.ejkim.bridge.apple.MacbookPro;
-import com.ejw.designpatterns.ejkim.bridge.apple.Spacegray;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -15,26 +11,12 @@ public class BridgeTest {
     @DisplayName("해당 지하철 급행 기능 추가")
     void testMetroForHyundaiRotem() {
         // Given
-        RotemMetro
+        RotemMetro rotemMetro = new RotemMetro(new MetroActionImpl("Hyundai Rotem"));
 
         // When
-        String result = macbookPro.getMacbook();
+        rotemMetro.fastMetro(20);
 
         // Then
-        Assertions.assertEquals("MacbookPro 스페이스그레이", result);
+        Assertions.assertEquals("급행역 도착 Hyundai Rotem DoorOpen Hyundai Rotem DoorClose", rotemMetro.fastMetro(4));
     }
-
-    @Test
-    @DisplayName("MacbookAir 에 실버 컬러 주입")
-    void testMacbookAirWithSpacegray() {
-        // Given
-        Macbook macbookAir = new MacbookAir(new Spacegray());
-
-        // When
-        String result = macbookAir.getMacbook();
-
-        // Then
-        Assertions.assertEquals("MacbookAir 스페이스그레이", result);
-    }
-
 }

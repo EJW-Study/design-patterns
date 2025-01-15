@@ -10,14 +10,17 @@ public class RotemMetro extends Metro {
         metroAction();
     }
 
-    public void fastMetro(int totalStation) {
+    public String fastMetro(int totalStation) {
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < totalStation; i++) {
             metroMove();
             if(i%4 == 0) {
-                System.out.println("급행역 도착");
-                metroDoorOpen();
-                metroDoorClose();
+                sb.append("급행역 도착 ");
+                sb.append(metroDoorOpen());
+                sb.append(metroDoorClose());
             }
         }
+
+        return sb.toString();
     }
 }
