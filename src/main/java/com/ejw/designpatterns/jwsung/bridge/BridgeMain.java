@@ -27,5 +27,11 @@ public class BridgeMain {
 
         d4.iterateDisplay(3);
 
+        d1 = new Display(new DecorateDisplayImpl("<",contents,">"));
+        d1.display();
+
+        d2 = new CountDisplay(new DecorateDisplayImpl("|", contents, "-"));
+        d2.multiDisplay(5);
+
     }
 }
