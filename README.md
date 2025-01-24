@@ -1,3 +1,2 @@
 # design-patterns 
-수정 - 김응주
-수정 - 한재원
+![image](https://github.com/user-attachments/assets/53c0a516-0774-4732-82f1-f92fce2680c6)
